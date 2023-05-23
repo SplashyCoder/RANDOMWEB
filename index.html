@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="headerContainer">
@@ -18,16 +21,17 @@
     <div class="container">
         <div class="descritionContainer">
             <p class="description">If you're in Bogota and want to know it in a diferent way 
-                Yo could try this one.<br/>
-                This web will give you a random address. the idea its to you go there and start looking 
+                you could try this one.<br/>
+                This web will give you a random address. the idea it's to you go there and start looking 
                 whats arround and discober the reality of the city.
             </p>
         </div>
         <div class="generatorContainer">
-            <h1>GENERATE CONTENT</h1>
-            <label for=""></label>
-            <button></button>
+            <h1></h1>
+            <label class="startPoint" id="startPoint"></label><br/><br/>
+            <button onclick="address()">Generate Address</button>
         </div>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15908.349107522607!2d-74.13568623465576!3d4.5783461000000045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1684871420827!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
     </div>
     <script src="./index.js"></script>
 </body>

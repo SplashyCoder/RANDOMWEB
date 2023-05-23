@@ -32,27 +32,31 @@
 
     const address =()=>{
 
+        let first =[]
+        const address = new Random()
+
         const clFirst =()=>{
             first.push(address.cl())
             let thirdOpc = address.cardinal()
-            document.write('CL'+first[0][0]+thirdOpc+'#'+first[0][1])
+            let startPoint = 'CL'+first[0][0]+thirdOpc+'#'+first[0][1]
+            const lable = document.getElementById('startPoint')
+            lable.textContent = startPoint
         }
 
         const krFirst =()=>{
             first.push(address.kr())
             let thirdOpc = address.cardinal()
-            document.write('Kr'+first[0][0]+'#'+first[0][1])
+            let startPoint = 'Kr'+first[0][0]+'#'+first[0][1]
+            const lable = document.getElementById('startPoint')
+            lable.textContent = startPoint
         }
 
-        let first =[]
-        const address = new Random()
-        let thirdOpc = address.cardinal()
-        first.push(Math.random() >= 0.5? clFirst(): krFirst())
-        // let id = 
+        Math.random() >= 0.5? clFirst(): krFirst()
+        
 
 
     } 
-    address()
+    
     
     
 
