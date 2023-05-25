@@ -38,7 +38,7 @@
         const clFirst =()=>{
             first.push(address.cl())
             let thirdOpc = address.cardinal()
-            let startPoint = 'CL'+first[0][0]+thirdOpc+'#'+first[0][1]
+            let startPoint = 'Cl'+first[0][0]+thirdOpc+'#'+first[0][1]
             const lable = document.getElementById('startPoint')
             lable.textContent = startPoint
         }
